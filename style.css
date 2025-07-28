@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+  font-family: "Outfit", sans-serif;
+  
+  --clr-slate-900: hsl(218 44% 22%);
+  --clr-slate-500: hsl(216 15% 48%);
+  --clr-slate-300: hsl(212 45% 89%);
+
+  --spacing-200: 1rem;
+  --spacing-300: 1.5rem;
+  --spacing-500: 2.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--clr-slate-300);
+  height: 100dvh;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-regular {
+  font-weight: 400;
+  font-size: 0.938rem;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: var(--clr-slate-500);
+}
+
+.text-bold {
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 120%;
+  letter-spacing: 0px;
+  color: var(--clr-slate-900);
+}
+
+.text-regular,
+.text-bold {
+  text-wrap: wrap;
+}
+
+.container {
+  background-color: white;
+  padding: var(--spacing-200) var(--spacing-200) var(--spacing-500) var(--spacing-200);
+  max-width: 20rem;
+  box-sizing: border-box;
+  border-radius: 1.25rem;
+  box-shadow: 0 1.563rem 1.563rem rgb(0 0 0 / 4.77%);
+}
+
+.qr-code {
+  border-radius: 0.625rem;
+}
+
+.qr-code-description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+  margin-top: var(--spacing-300);
+  padding: 0 var(--spacing-200);
+  text-align: center;
+}
+
+.attribution {
+  display: none;
+}
